@@ -1,0 +1,110 @@
+Request method:	GET
+Request URI:	http://34.75.105.197:8080/qna/listAllChapters
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Sat, 26 Sep 2020 20:35:55 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+
+{
+    "chapters": [
+        {
+            "chapter": "chapter1"
+        },
+        {
+            "chapter": "chapter2"
+        },
+        {
+            "chapter": "custom"
+        },
+        {
+            "chapter": "level1"
+        },
+        {
+            "chapter": "level123"
+        },
+        {
+            "chapter": "menu2"
+        }
+    ]
+}
+Request method:	GET
+Request URI:	http://34.75.105.197:8080/qna/chapterxzy123
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 404 
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Sat, 26 Sep 2020 20:35:55 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+
+{
+    "timestamp": "2020-09-26T20:35:56.353+00:00",
+    "message": "chapterxzy123questions are not available",
+    "details": "uri=/qna/chapterxzy123"
+}
+Request method:	GET
+Request URI:	http://34.75.105.197:8080/qna/chapter1
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Sat, 26 Sep 2020 20:35:58 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+
+[
+    {
+        "chapter": "chapter1",
+        "questions": "What do you do when you meet a friend?",
+        "choices": "Smile and say ‘Hi’,Look Away, Run",
+        "goldAnswer": "Smile and say ‘Hi’",
+        "silverAnswer": "Run",
+        "bronzeAnswer": "Run"
+    },
+    {
+        "chapter": "chapter1",
+        "questions": "When I am bored?",
+        "choices": "Run around,Ask mommy/daddy for an activity, Eat candies",
+        "goldAnswer": "Run around",
+        "silverAnswer": "Eat candies",
+        "bronzeAnswer": "Eat candies"
+    },
+    {
+        "chapter": "chapter1",
+        "questions": "What do you do with waste paper?",
+        "choices": "Throw in dustbin, Give it to mommy, Throw it on the ground",
+        "goldAnswer": "Throw in dustbin",
+        "silverAnswer": "Throw it on the ground",
+        "bronzeAnswer": "Throw it on the ground"
+    }
+]
